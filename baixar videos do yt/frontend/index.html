@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhorador de Imagens com IA</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div id="logo-conteiner">  <img src="imagens/logo.png" alt="Logo do Melhorador de Imagens com IA" ></div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#enhance">Melhorar</a></li>
+                <li><a href="#about">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="fullscreen-section">
+            <h1>Melhorador de Imagens com IA</h1>
+            <p>Transforme suas imagens com o poder da inteligência artificial</p>
+        </section>
+
+        <section id="enhance" class="fullscreen-section">
+            <h2>Melhore sua imagem</h2>
+            <div id="select">
+                <label for="image-input">Selecione uma imagem:</label>
+                <input type="file" id="image-input" accept="image/*" aria-describedby="file-format">
+                <p id="file-format">Formatos aceitos: JPG, PNG, WebP</p>
+            </div>
+            <select id="enhancement-options">
+                <option value="upscale-2x">Aumentar resolução 2x</option>
+                <option value="upscale-4x">Aumentar resolução 4x</option>
+            </select>
+            <button id="enhance-button">Melhorar Imagem</button>
+            <div id="image-container">
+                <img id="original-image" alt="Imagem Original">
+                <img id="enhanced-image" alt="Imagem Melhorada" style="display: none;">
+            </div>
+            <a id="download-link" style="display: none;">Baixar Imagem Melhorada</a>
+        </section>
+
+        <section id="about" class="fullscreen-section">
+            <h2>Sobre o serviço</h2>
+            <p>Nosso melhorador de imagens utiliza tecnologia de ponta em IA para aprimorar a qualidade das suas fotos.</p>
+            <h3>Limitações</h3>
+            <ul>
+                <li>Tamanho máximo do arquivo: 25MB</li>
+                <li>Resolução mínima: 64x64px</li>
+                <li>Resolução máxima para upscale 2x: 3000x3000px</li>
+                <li>Resolução máxima para upscale 4x: 1500x1500px</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Melhorador de Imagens com IA</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
